@@ -1,0 +1,25 @@
+extends ../layout/index
+
+block contenido 
+
+    div.py-5
+        h1.text-4xl.my-10.font-extrabold.text-center Raíces 
+            span.font-normal Mercado saludable
+        h2.text-center.text-4xl= pagina
+
+    .mt-5.mx-auto.max-w-md
+
+        .bg-white-500.py-8.px-4.shadow
+            form.space-y-5
+               
+                div 
+                    label.block.text-sm.uppercase.text-green-500.mb-2.font-bold(for="email") Email
+                    input#email.w-full.px-3.py-4.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu email" type="text" name="email")
+                div 
+                    label.block.text-sm.uppercase.text-green-500.mb-2.font-bold(for="password") password
+                    input#password.w-full.px-3.py-4.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="password" type="text" name="password")
+                div.flex.items-center.justify-between
+                    a.text-gray-500.text-xs(href="/registro") ¿No tienes cuenta? Crea una cuenta
+                    a.text-gray-500.text-xs(href="/recuperarPassword") Olvidé mi contraseña
+                input(class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 cursor-pointer" type="submit" value="Iniciar cuenta")
+                        
